@@ -45,11 +45,11 @@ body {
     justify-content: center;
     margin-right: 10px;
     max-width: 30%;
+    height: 100vh;
 }
 
 .photoNav {
     margin-bottom: 10%;
-    margin-left: 20%;
     width: auto;
     max-width: 100%;
 }
@@ -71,25 +71,24 @@ nav {
     justify-content: center;
 }
 
-ul {
-    display: contents;
-    justify-content: space-around;
-    display: block;
+.navList {
+    text-align: center;
 }
 
-li {
+.navPuce {
+    justify-content: center;
     list-style-type: none;
     margin-bottom: 5%;
 }
 
-li a {
+.navPuce a {
     font-size: 2rem;
     text-decoration: none;
     transition: 0.2s;
     color: white;
 }
 
-li a:hover {
+.navPuce a:hover {
     font-size: 2.5rem;
 }
 
@@ -97,11 +96,11 @@ li a:hover {
 /* Contenu de la page ---------------------------------------------- */
 
 .content {
-    overflow-y: scroll;
     flex: 80%;
     justify-content: space-evenly;
     align-content: flex-start;
     padding: 50px 60px 0px;
+    overflow-y: scroll;
 }
 
 h2 {
@@ -121,7 +120,7 @@ p {
 }
 
 .change_section {
-    width: 64px;
+    width: 200px;
     height: 6px;
     border-radius: 10px;
     background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
@@ -132,4 +131,120 @@ section {
     margin-top: 70px;
     justify-content: space-evenly;
     align-content: flex-start;
+}
+
+.miseEnForme {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 3rem;
+    place-items: center;
+    gap: 3rem 2rem;
+}
+
+.experienceBlock {
+    border-radius: 10px;
+    box-shadow: rgb(80 78 78 / 50%) 3px 3px 20px;
+    text-align: center;
+    width: 400px;
+    background: rgb(15, 22, 36);
+    ;
+}
+
+.experiencePictures {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+h3 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: rgb(156, 201, 227);
+    padding: 0.5rem 0px;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+
+.descritptionExperience {
+    width: 100%;
+    padding: 0px 50px;
+    color: rgb(228, 230, 231);
+    line-height: 24px;
+    text-align: justify;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.techno {
+    padding-top: 10px;
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+li {
+    list-style-type: none;
+    color: rgb(216, 191, 191);
+    ;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.petitPlus {}
+
+.descritptionLoisir {
+    width: 100%;
+    color: rgb(228, 230, 231);
+    line-height: 24px;
+    text-align: justify;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(85px, 220px));
+    gap: 40px;
+    padding: 0px;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 16px;
+}
+
+.email {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 16px;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    left: 0px;
+}
+
+.finalChange_section {
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+    margin-top: 50px;
+}
+
+.end {
+    padding-bottom: 80px;
 }

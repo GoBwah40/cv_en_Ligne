@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.png">
     <link rel="stylesheet" href="style.css"></link>
     <title>Document</title>
 </head>
@@ -14,29 +15,31 @@
         <aside class="main-nav">
             <img src="/img/photoMoi.png" alt="photoNav" class="photoNav"></img>
             <nav>
-                <ul>
-                    <li>
-                        <a href="#">Présentation</a>
+                <ul class="navList">
+                    <li class="navPuce">
+                        <a href="#accueil">Accueil</a>
                     </li>
-                    <li>
-                        <a href="#">Parcours</a>
+                    <li class="navPuce">
+                        <a href="#aPropos">À propos</a>
                     </li>
-                    <li>
-                        <a href="#">Expériences</a>
+                    <li class="navPuce">
+                        <a href="#mesExperiences">Expériences</a>
                     </li>
-                    <li>
-                        <a href="#">Projets</a>
+                    <li class="navPuce">
+                        <a href="#">Petit +</a>
                     </li>
                 </ul>
             </nav>
             <div class="reseaux">
-                <img src="/img/linkedin_picto.png" alt="" class="reseaux_picto">
-                <img src="/img/github_picto.png" alt="" class="reseaux_picto">
+                <a href="https://www.linkedin.com/in/matthias-della-libera-9b6721174/" target="_blank" class="reseaux_picto"><img src="/img/linkedin_picto.png" alt="picto Linkedin"></img>
+                </a>
+                <a href="https://github.com/GoBwah40" target="_blank" class="reseaux_picto"><img src="/img/github_picto.png" alt="picto Github"></img>
+                </a>
             </div>
         </aside>
 
 
-        <aside class="content">
+        <aside class="content" id="accueil">
             <!-- Intro ---------------------------------------------------------- -->
 
             <h2>
@@ -50,16 +53,138 @@
 
 
             <!-- A propos ---------------------------------------------------------- -->
-            <section>
+            <section id="aPropos">
                 <h2>À propos de moi</h2>
-                <img src="" alt="photoApropos" id="photoApropos">
                 <p>Bonjour à tous, je suis Matthias DELLA-LIBERA et je suis un développeur web junior. Je viens du Sud-Ouest de la France dans la fameuse région du Pays-Basque; laquelle est connue pour ses montagnes, ses plages et sa culture unique. J'ai
                     grandi et vécu dans la ville de Bayonne oú j'ai fait mes études.
                     </br>
                     </br>
                     Diplômé d'un Baccalauréat économioque et social, j'ai vu et éssayé de nombreux domaine allant de l'économie à la médecine en passant par l'hôtellerie et la communication. C'est par ailleurs lors d'un BTS Communication que j'ai découvert un fort interêt
-                    pour la programamtion et le digital.
+                    pour la programamtion et le digital. De fait, j'ai commencé a étudié en autodidacte, grâce à OpennClasrooms et Youtube, les langages HTML, CSS et Javascript. Puis, je me suis diversifié en intégrant quelques notions de Java et de Kotlin
+                    afin de m'initier au développemtn mobile.
+                    </br>
+                    </br>
+                    Je suis un passionné de culture japonaise, de manga et anime mais je suis aussi sportif. Je pratique le bodyboard/bodysurf, la pala, du foot et de l' escalade les jours pluvieux.
                 </p>
+            </section>
+            <div class="change_section"></div>
+
+            <!-- Mes expériences ------------------------------------------------------------->
+            <section id="mesExperiences">
+                <h2>Mes expériences</h2>
+                <div class="miseEnForme">
+
+                    <!-- Site web fannylonguesserre -->
+                    <div class="experienceBlock">
+                        <img src="/img/webPicture.jpg" alt="web" class="experiencePictures">
+                        <div>
+                            <h3>fannylonguesserre.com</h3>
+                        </div>
+                        <p class="descritptionExperience">
+                            Suite à la demande d'un particulier, il m'a été confié pour mission de créer un site via l'outil Wordpress. C'est notamment lors de cette tâche que j'ai découvert véritablement le monde digital et ses outils. En effet, je fut introduit à quelques notions
+                            de base de CSS et de HTML pour regler certains détails du site.
+                            <br> De fait, cette mission m'a permi :<br>- de prendre conscience du travail de developpeur,<br>- de manier des outils digitaux,<br>- d'apprendre à rechercher une information par moi-même, de gagner en autonomie.
+                            <br> Il n'est malheureusement plus disponible aujourd'hui.
+                        </p>
+                        <br>
+                        <div class="techno">
+                            <div>
+                                Technologies
+                            </div>
+                            <ul>
+                                <li>Wordpress</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Voyage au japon-->
+                    <div class="experienceBlock">
+                        <img src="/img/japanPicture.jpg" alt="Japon" class="experiencePictures">
+                        <div>
+                            <h3>Voyage au Japon</h3>
+                        </div>
+                        <p class="descritptionExperience">
+                            Ce projet me tenait à coeur car ce fut pour moi l'occaion d'atteindre un but que je m'étais fixé qui me semblait irréalisable. Ainsi, en l'accomplissant, j'ai pu gagné en maturité, en indépendance et en confiance.
+                        </p>
+                        <br>
+                        <div class="techno">
+                            <div>
+                                Soft Skills
+                            </div>
+                            <ul>
+                                <li>Autonomie</li>
+                                <li>Rigueur</li>
+                                <li>Organisation</li>
+                                <li>Développement de soi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Application pomodoro-->
+                    <div class="experienceBlock">
+                        <img src="/img/pomodoroAppIcon.png" alt="Pomodoro App" class="experiencePictures">
+                        <div>
+                            <h3>Application Pomodoro</h3>
+                        </div>
+                        <p class="descritptionExperience">
+                            Au cours d'une formation à l'AFPA, il nous a été demandé de concevoir une application mobile en KOTLIN. Avec un camarade, nous avons décidé de créer une application minuteur basée sur la méthode de travail Pomodoro. Nous avons réalisé ce travail en suivant
+                            la méthode Agile.
+                        </p>
+                        <br>
+                        <div class="techno">
+                            <div>
+                                Technologies
+                            </div>
+                            <ul>
+                                <li>Github</li>
+                                <li>Kotlin</li>
+                                <li>Android Studio</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <div class="change_section"></div>
+            <section>
+                <h2>un peu plus d'infos</h2>
+                <ul class="petitPlus">
+                    <li>
+                        <img src="/img/anglais.png" alt="anglais">
+                        <p class="descritptionLoisir">Oral et écrit : <br> Niveau intermédiaire</p>
+                    </li>
+                    <li>
+                        <img src="/img/physic.png" alt="sciences">
+                        <p class="descritptionLoisir">J'ai un grand interêt pour les sciences :<br>surtout la physique quantique et l'astrophysique</p>
+                    </li>
+                    <li>
+                        <img src="/img/pictoSurf.png" alt="bodyboard">
+                        <p class="descritptionLoisir">Ayant grandit au Pays-Basque, <br>je me suis passionné pour le bodyboard <br>et le bodysurf</p>
+                    </li>
+                    <li>
+                        <img src="/img/pictoPala.png" alt="pala">
+                        <p class="descritptionLoisir">Dans la même logique que pour le bodyboard,<br>je pratique la pala durant mes heures perdues</p>
+                    </li>
+                    <li>
+                        <img src="/img/pictoMuscu.png" alt="musculation">
+                        <p class="descritptionLoisir">Afin de me maintenir dans une forme "olympique",<br>je m'entraîne tous les jours !</p>
+                    </li>
+                    <li>
+                        <img src="/img/pictoJapon.png" alt="japon">
+                        <p class="descritptionLoisir">Fan incontesté de Japon, je me passionne de tous leur contenu: <br>animes, mangas, cuisine, traditions, ...</p>
+                    </li>
+                </ul>
+            </section>
+            <div class="finalChange_section"></div>
+            <section class="end">
+                <ul class="footer">
+                    <div>
+                        <h4>email</h4>
+                        <a href="mailto:dellalibera40@gmail.com" class="email">dellalibera40@gmail.com</a>
+                    </div>
+                </ul>
             </section>
 
         </aside>

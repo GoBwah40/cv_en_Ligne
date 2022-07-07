@@ -1,7 +1,3 @@
-const counterDisplay = document.querySelector("h3");
-let compteur = 0;
-
-
 const bubbleMaker = () => {
     const bubble = document.createElement("span");
     const size = Math.random() * 200 + 100 + "px";
@@ -16,20 +12,6 @@ const bubbleMaker = () => {
     bubble.style.setProperty("--left", Math.random() * 100 * plusMinus + "%");
 
     bubble.classList.add('bubble');
-
-    document.addEventListener("keypress", (e) => {
-        if (e.key) {
-            counterDisplay.textContent = 0;
-            compteur = 0;
-        }
-    })
-
-    bubble.addEventListener("click", () => {
-        bubble.remove();
-        compteur += 1;
-        counterDisplay.textContent = compteur;
-
-    });
 
     document.body.appendChild(bubble);
     setTimeout(() => {
