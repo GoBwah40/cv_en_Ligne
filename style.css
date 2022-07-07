@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    color: white;
+    background: rgb(15, 22, 36);
+    overflow: hidden;
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 300px;
+    background: rgba(255, 166, 0, 0.6);
+    opacity: 0;
+    animation: anim 8s forwards;
+    filter: hue-rotate(0deg);
+    z-index: -10;
+}
+
+@keyframes anim {
+    to {
+        top: -250px;
+        left: var(--left);
+        opacity: 1;
+        filter: hue-rotate(720deg);
+    }
+}
+
+.main-nav {
+    color: #fff;
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    max-width: 30%;
+}
+
+.photoNav {
+    margin-bottom: 10%;
+    margin-left: 20%;
+    width: auto;
+    max-width: 100%;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reseaux_picto {
+    margin: 5%;
+}
+
+
+/*------------------------*/
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: contents;
+    justify-content: space-around;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 5%;
+}
+
+li a {
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.2s;
+    color: white;
+}
+
+li a:hover {
+    font-size: 2.5rem;
+}
+
+
+/* Contenu de la page ---------------------------------------------- */
+
+.content {
+    overflow-y: scroll;
+    flex: 80%;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    padding: 50px 60px 0px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 65px;
+    width: max-content;
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+
+p {
+    text-align: justify;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.change_section {
+    width: 64px;
+    height: 6px;
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+    margin-top: 50px;
+}
+
+section {
+    margin-top: 70px;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
