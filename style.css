@@ -37,48 +37,40 @@ body {
 }
 
 .main-nav {
-    color: #fff;
-    flex: 30%;
-    display: flex;
-    flex-direction: column;
+    width: 25%;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
-    max-width: 30%;
     height: 100vh;
+    padding-left: 15px;
 }
 
 .photoNav {
-    margin-bottom: 10%;
-    width: auto;
     max-width: 100%;
+    display: block;
+    margin: 15% auto 10px auto;
+}
+
+#nomPrenom {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: rgb(156, 201, 227);
+    width: auto;
+    text-align: center;
 }
 
 .reseaux {
     display: flex;
+    margin: auto;
+    width: 150px;
     justify-content: space-around;
-}
-
-.reseaux_picto {
-    margin: 5%;
 }
 
 
 /*------------------------*/
 
-nav {
-    display: flex;
-    justify-content: center;
-}
-
 .navList {
     text-align: center;
-}
-
-.navPuce {
-    justify-content: center;
-    list-style-type: none;
-    margin-bottom: 5%;
 }
 
 .navPuce a {
@@ -90,17 +82,17 @@ nav {
 
 .navPuce a:hover {
     font-size: 2.5rem;
+    color: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
 }
 
 
 /* Contenu de la page ---------------------------------------------- */
 
 .content {
-    flex: 80%;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    padding: 50px 60px 0px;
+    flex: 75%;
     overflow-y: scroll;
+    padding-right: 3%;
+    margin-left: 3%;
 }
 
 h2 {
@@ -147,7 +139,15 @@ section {
     text-align: center;
     width: 400px;
     background: rgb(15, 22, 36);
-    ;
+    transition: 0.5s;
+}
+
+.experienceBlock:hover {
+    border-radius: 10px;
+    box-shadow: rgb(80 78 78 / 50%) 3px 3px 20px;
+    text-align: center;
+    width: 450px;
+    background: rgb(15, 22, 36);
 }
 
 .experiencePictures {
@@ -167,7 +167,7 @@ h3 {
 }
 
 .descritptionExperience {
-    width: 100%;
+    width: auto;
     padding: 0px 50px;
     color: rgb(228, 230, 231);
     line-height: 24px;
@@ -194,9 +194,9 @@ ul {
 li {
     list-style-type: none;
     color: rgb(216, 191, 191);
-    ;
     font-size: 1.5rem;
     margin: 10px;
+    transition: 0.5s;
 }
 
 .petitPlus {
@@ -213,6 +213,45 @@ li {
     text-align: justify;
     font-weight: 200;
     font-size: 18px;
+}
+
+#separation {
+    height: 3rem;
+}
+
+.technoMastered {
+    border-radius: 10px;
+    box-shadow: rgb(80 78 78 / 50%) 3px 3px 20px;
+    text-align: center;
+    width: 100%;
+    background: rgb(15, 22, 36);
+    ;
+}
+
+.titre {
+    padding-top: 20px;
+}
+
+.technoList {
+    padding: 1rem;
+}
+
+.blockSkills {
+    display: flex;
+    align-items: center;
+    border: 3px solid rgb(19, 173, 199);
+    border-radius: 10px;
+    border-image: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+    border-image-slice: 1;
+    margin-bottom: 2rem;
+    padding: 20px;
+}
+
+.change_Minisection {
+    height: 1px;
+    border-radius: 10px;
+    background: whitesmoke;
+    margin: 15px 200px 15px 200px;
 }
 
 .footer {
