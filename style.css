@@ -112,7 +112,7 @@ p {
     color: rgba(255, 255, 255, 0.7);
 }
 
-p > a {
+p>a {
     border: 2px solid rgb(156, 201, 227);
     border-radius: 10px;
     text-decoration: none;
@@ -121,7 +121,7 @@ p > a {
     padding: 10px 15px 10px 15px;
 }
 
-p > a:active {
+p>a:active {
     color: white;
     text-decoration: none;
 }
@@ -142,13 +142,14 @@ section {
 
 .miseEnForme {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 3rem;
     place-items: center;
-    gap: 3rem 2rem;
+    gap: 3rem 1rem;
 }
 
 .experienceBlock {
+    width: 400px;
     border-radius: 10px;
     box-shadow: rgb(80 78 78 / 50%) 3px 3px 20px;
     text-align: center;
